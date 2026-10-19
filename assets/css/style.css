@@ -1,0 +1,160 @@
+/* นำเข้าฟอนต์ Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap');
+
+/* สีพื้นหลังและฟอนต์ (Color & Font Size) */
+body {
+    background-color: #f4f7f6; /* สีพื้นหลังเทาอมฟ้าสบายตา */
+    font-family: 'Prompt', sans-serif;
+    color: #333333;
+    line-height: 1.6;
+    font-size: 16px;
+    margin: 0;
+    padding: 20px 0;
+}
+
+/* Layout กล่องเนื้อหาหลัก */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* ดีไซน์การ์ดแต่ละส่วน */
+.card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); /* เงานุ่มๆ */
+    border-top: 5px solid #4a90e2; /* แถบสีด้านบนการ์ด */
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* เอฟเฟกต์ยกตัวเมื่อเอาเมาส์ชี้ */
+}
+
+/* ส่วนหัว Profile (Layout) */
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: linear-gradient(135deg, #ffffff 0%, #f0f8ff 100%);
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #4a90e2; /* กรอบรูปโปรไฟล์ */
+    box-shadow: 0 4px 10px rgba(74, 144, 226, 0.3);
+}
+
+.hero h1 {
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+    font-size: 2.2rem;
+}
+
+.headline {
+    color: #4a90e2;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #e1e8ed;
+    padding-bottom: 10px;
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+/* รูปแบบ Education (Timeline Style) */
+.item {
+    padding-left: 20px;
+    border-left: 3px solid #4a90e2; /* เส้น Timeline ซ้ายมือ */
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.item::before {
+    content: '';
+    position: absolute;
+    left: -9px;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    border: 3px solid #4a90e2;
+    border-radius: 50%;
+}
+
+.item h3 {
+    margin: 0 0 5px 0;
+    color: #34495e;
+}
+
+.item p {
+    margin: 0;
+    color: #7f8c8d;
+}
+
+/* รูปแบบ Skill และ Language */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill-badge {
+    background-color: #e8f4fd;
+    color: #2980b9;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid #bde0fe;
+    font-size: 0.95rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100px;
+}
+
+.lang-badge {
+    background-color: #fdf5e6;
+    color: #d35400;
+    border-color: #fad7a1;
+}
+
+.skill-badge strong {
+    font-size: 1.1rem;
+}
+
+.skill-badge span {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+/* รูปแบบ Hobby */
+.hobby-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.hobby-item {
+    background-color: #f1f2f6;
+    padding: 8px 15px;
+    border-radius: 8px;
+    color: #2f3542;
+    font-weight: 500;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #95a5a6;
+    font-size: 0.9rem;
+}
